@@ -13,9 +13,21 @@
 
   <body>
 
+    <header class="header">
+    <%= image_tag("twitter.png") %>
+        <ul class="top_menu">
+          <li><a href="#">log in</a></li>
+          <li><a href="#">log out</a></li>
+        </ul>
+    </header>
 
-    <div class="top_page">
+    <div class="container">
+      <div class="image_tag">
+      <div/>
+
+      <div class="top_page">
         <%= yield %>
+      </div>
     </div>
 
     <footer class="footer">
