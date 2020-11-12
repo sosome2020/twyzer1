@@ -11,20 +11,16 @@ class BlogsController < ApplicationController
   def create
    @blog = Blog.new(blog_params)
    if @blog.save
-     # Move to the list screen and display the message "Blog created!"
      redirect_to blogs_path, notice: "I have created a blog!"
    else
-     # Redraw the input form.
      render :new
    end
  end
 
   def show
-
   end
 
  def edit
-
  end
 
  def update
